@@ -1,3 +1,7 @@
+ESP-IDF component to work with HLW8032 energy metering IC.
+
+Read the [official documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) on integrating components on your ESP-IDF projects.
+
 # HLW8032
 The HLW8032 is a high precision energy metering IC that uses a CMOS process and is primarily used in single phase applications. It measures line voltage and current and can calculate active power, apparent power and power factors. The device integrates two ∑-Δ ADCs and a high-precision energy metering core. HLW8032 can communicate data through UART port. HLW8032 adopts 5V power supply, built-in 3.579M crystal oscillator and 8PIN SOP package. HLW8032 has the advantages of high precision, low power consumption, high reliability, strong applicable environment, etc. It is suitable for electric energy measurement of single-phase two-wire power users.
 
