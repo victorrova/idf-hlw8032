@@ -9,7 +9,7 @@
 #include <esp_event.h>
 #include <esp_log.h>
 
-#include "hlw8032.h"
+#include "components/hlw8032/include/hlw8032.h"
 
 #define HLW8032_GPIO  GPIO_NUM_5
 
@@ -49,7 +49,7 @@ esp_err_t hlw8032_init(gpio_num_t gpio_num)
 
 void app_main(void) 
 {
-    ESP_LOGI("ESP", "Free heap: %d bytes", esp_get_free_heap_size());
+    ESP_LOGI("ESP", "Free heap: %d bytes", (int)esp_get_free_heap_size());
     ESP_LOGI("ESP", "IDF version: %s", esp_get_idf_version());
 
     hlw8032_init(HLW8032_GPIO);

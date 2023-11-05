@@ -1,6 +1,6 @@
 
-#include "hlw8032.h"
-
+//#include "hlw8032.h"
+#include "components/hlw8032/include/hlw8032.h"
 esp_err_t hlw8032_serial_begin(hlw8032_t* hlw8032, uart_port_t UART_number, gpio_num_t RX_pin_number, uint16_t UART_buf_size)
 {
     esp_err_t err;
